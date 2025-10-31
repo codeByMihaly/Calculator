@@ -1,0 +1,74 @@
+* {
+    text-align: center;
+}
+
+body {
+    margin: 35px;
+    width: auto;
+    height: auto;
+}
+
+h1 {
+    display: inline-block;
+    font-size: 4em;
+    padding: 5px 10px;
+    color: #eccb83;
+    background-color: #749ffc;
+    max-width: 0 400px 0 400px;
+    border-radius: 25px;
+    
+}
+
+.calculator {
+ background-color: rgb(229, 248, 216);
+ width: fit-content;
+ margin: auto;
+ border-radius: 28px;
+}
+
+.math {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 3em;
+    width: fit-content;
+    margin: auto;
+    background-color: rgb(192, 231, 225);
+    padding: 0 50px 0 50px;
+    border-radius: 25px;
+}
+
+#op1, #op2, #result {
+    color: #eccb83;
+}
+
+#operator, #even {
+    color:#749ffc;
+}
+
+.operators {
+    display: flex;
+    width: fit-content;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 5px;
+    gap: 25px;
+    background-color: rgb(229, 248, 216);
+}
+
+.numbers {
+    padding: 25px;
+    font-size: 2em;
+    display: inline-block;
+    border: solid green;
+}
+
+#opPlus, #opMinus, #opMult, #opDiv, #opEven{
+    font-size: 2em;
+    padding: 1px;
+
+}
+
+#opClear {
+    font-size: 15px;
+}
