@@ -1,2 +1,2 @@
 # Calculator
-My first calculator program. Im focusing mostly on the function site.
+My first calculator program. Im focusing mostly for the function side.
