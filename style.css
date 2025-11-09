@@ -69,6 +69,7 @@ h1 {
   background-color: rgb(192, 231, 225);
   margin: 0px 0px 10px 0px;
   border-radius: 25px;
+  
 
 }
 
@@ -80,6 +81,7 @@ h1 {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  color:#eccb83
 }
 
 #opMinus,
@@ -91,6 +93,7 @@ h1 {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  color:#eccb83
 }
 
 #opClear {
@@ -100,6 +103,7 @@ h1 {
   border-radius: 5px;
   cursor: pointer;
   font-weight: 600;
+  color:#eccb83
 }
 
 #opClear:hover,
@@ -136,6 +140,7 @@ h1 {
   border-radius: 10px;
   font-size: 1em;
   cursor: pointer;
+  color:#749ffc
 }
 
 #num0 {
@@ -146,6 +151,7 @@ h1 {
   border-radius: 10px;
   font-size: 1em;
   cursor: pointer;
+  color:#749ffc
 }
 
 #numP {
@@ -156,6 +162,7 @@ h1 {
   border-radius: 10px;
   font-size: 1em;
   cursor: pointer;
+  color:#749ffc
 }
 
 #numBack {
@@ -166,6 +173,7 @@ h1 {
   border-radius: 10px;
   font-size: 1em;
   cursor: pointer;
+  color:#749ffc
 }
 
 .bottom {
