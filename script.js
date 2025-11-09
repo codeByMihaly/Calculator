@@ -20,6 +20,8 @@ let num9 = document.getElementById("num9");
 let num0 = document.getElementById("num0");
 let numP = document.getElementById("numP");
 let numBack = document.getElementById("numBack");
+let opClear = document.getElementById("opClear");
+
 
 
 // add number function to the calculator
@@ -125,42 +127,40 @@ function addOperate(addOp) {
   operator.textContent += addOp;
 };
 
-opPlus.addEventListener("click", function () {
-  if (operator.textContent === "") {
-      let operator1 = operator.textContent;
-      if (operator1.indexOf("+") !== 0 && !operator1.includes("+")) {
-       addOperate("+");
-      }
-  }
-});
+opPlus.addEventListener("click", () => operatorEnd ("+"));
+opMinus.addEventListener("click", () => operatorEnd("-"));
+opMult.addEventListener("click", () => operatorEnd("*"));
+opDiv.addEventListener("click", () => operatorEnd("/"));
 
-opMinus.addEventListener("click", function () {
-  if (operator.textContent === "") {
-      let operator1 = operator.textContent;
-      if (operator1.indexOf("-") !== 0 && !operator1.includes("-")) {
-      addOperate("-");
-      }
-  }
-});
+function operatorEnd(opEnd) {
+    let num1 = Number(op1.textContent);
+    let num2 = Number(op2.textContent);
+    if(op1.textContent !== "" && operator.textContent !== "" && op2.textContent !== "") {
+        let resultValue;
 
-opMult.addEventListener("click", function () {
-  if (operator.textContent === "") {
-      let operator1 = operator.textContent;
-      if (operator1.indexOf("*") !== 0 && !operator1.includes("*")) {
-      addOperate("*");
-      }
-  }
-});
+        switch (operator.textContent) {
+          case "+":
+            resultValue = num1 + num2;
+         break;
+          case "-":
+            resultValue = num1 - num2;
+         break;
+          case "*":
+            resultValue = num1 * num2;
+         break;
+          case "/":
+            resultValue = num2 !== 0 ? num1 / num2 : "NaN";
+        }
 
-opDiv.addEventListener("click", function () {
-  if (operator.textContent === "") {
-      let operator1 = operator.textContent;
-      if (operator1.indexOf("/") !== 0 && !operator1.includes("/")) {
-      addOperate("/");
-      }
-  }
-});
-
+        op1.textContent = resultValue;
+        op2.textContent = "";
+        operator.textContent = opEnd;
+        even.textContent = "";
+        result.textContent = "";
+    } else if (op1.textContent !=="" && operator.textContent ==="") {
+      operator.textContent = opEnd;
+    }
+};
 
 // Clear function
 
@@ -200,7 +200,7 @@ document.addEventListener("keydown", function(event) {
   if (event.key >= "0" && event.key <= "9") {
     addNumber(event.key);
 
-  /* dont function :
+  /* dot function :
      - Can't be more than one dot
      - Can't start with dot
   */
@@ -223,13 +223,8 @@ document.addEventListener("keydown", function(event) {
   // Operator keys can't be more than once
   // keydown function to operators
   if (["+", "-", "*", "/"].includes(event.key)) {
-     if (operator.textContent === "") {
-      let operator1 = operator.textContent;
-      if (operator1.indexOf["+", "-", "*", "/"] !== 0 && !operator1.includes["+", "-", "*", "/"]) {
-        addOperate(event.key);
-      }
-    }     
-  } 
+  operatorEnd(event.key);
+}
   // keydown function to Backspace
 
   if (event.key === "Backspace") {
