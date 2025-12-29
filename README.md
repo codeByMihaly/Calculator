@@ -3,10 +3,10 @@
 A simple browser-based calculator created as part of **The Odin Project**.  
 This was my first calculator project, where I focused mainly on implementing the core functionality and understanding how to manage state, operations, and DOM updates in JavaScript.
 
-🔗 **Live Demo:** https://codebymihaly.github.io/Calculator/  
+🔗 **Live Demo:**  https://codebymihaly.github.io/Calculator/
 
 
-## 📌 Features
+**Features**
 
 - Basic arithmetic operations:
   - Addition
@@ -17,9 +17,10 @@ This was my first calculator project, where I focused mainly on implementing the
 - Simple, clean UI
 - Real-time display updates
 - Error handling for invalid operations (e.g. division by zero)
+- Can use keyboard aswell
 
 
-## 🛠️ Technologies Used
+## What I used:
 
 - **HTML5** – structure of the calculator
 - **CSS3** – layout and styling
@@ -28,11 +29,15 @@ This was my first calculator project, where I focused mainly on implementing the
 - **GitHub Pages** – live deployment
 
 
-## 📚 What I Learned
+## What I Learned
 
 - How to structure a simple JavaScript application
 - Handling user input through button events
-- Updating the DOM dynamically
 - Managing calculator state (current number, previous number, operator)
 - Handling edge cases and preventing invalid operations
 - Writing cleaner, more readable functions
+- 
+## Screenshots: 
+
+<img width="2515" height="1331" alt="img1" src="https://github.com/user-attachments/assets/71974378-7d27-4d3c-bf79-a81370ee96ac" />
+<img width="2529" height="1337" alt="img2" src="https://github.com/user-attachments/assets/b7874aac-b5f0-4a59-a384-07833bae2737" />
