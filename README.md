@@ -40,4 +40,5 @@ This was my first calculator project, where I focused mainly on implementing the
 ## Screenshots: 
 
 <img width="2515" height="1331" alt="img1" src="https://github.com/user-attachments/assets/71974378-7d27-4d3c-bf79-a81370ee96ac" />
-<img width="2529" height="1337" alt="img2" src="https://github.com/user-attachments/assets/b7874aac-b5f0-4a59-a384-07833bae2737" />
+<img width="2375" height="1263" alt="img2" src="https://github.com/user-attachments/assets/2daccdf6-66de-4ffe-bde7-ea743f357090" />
+
