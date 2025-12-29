@@ -36,6 +36,3 @@ This was my first calculator project, where I focused mainly on implementing the
 - Managing calculator state (current number, previous number, operator)
 - Handling edge cases and preventing invalid operations
 - Writing cleaner, more readable functions
-
-
-
