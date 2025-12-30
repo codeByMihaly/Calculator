@@ -3,7 +3,7 @@
 A simple browser-based calculator created as part of **The Odin Project**.  
 This was my first calculator project, where I focused mainly on implementing the core functionality and understanding how to manage state, operations, and DOM updates in JavaScript.
 
-🔗 **Live Demo:**  https://codebymihaly.github.io/Calculator/
+**Live Demo:**  https://codebymihaly.github.io/Calculator/
 
 
 **Features**
